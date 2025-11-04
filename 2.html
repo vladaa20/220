@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фотогалерея</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #74ABE2, #5563DE);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+      color: white;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      border: 4px solid white;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <h1>Моя фотогалерея 💫</h1>
+  <div class="gallery">
+    <img src="https://picsum.photos/id/1015/600/400" alt="Фото 1">
+    <img src="https://picsum.photos/id/1025/600/400" alt="Фото 2">
+    <img src="https://picsum.photos/id/1035/600/400" alt="Фото 3">
+    <img src="https://picsum.photos/id/1045/600/400" alt="Фото 4">
+    <img src="https://picsum.photos/id/1055/600/400" alt="Фото 5">
+    <img src="https://picsum.photos/id/1065/600/400" alt="Фото 6">
+  </div>
+</body>
+</html>
